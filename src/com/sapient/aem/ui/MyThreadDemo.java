@@ -5,8 +5,10 @@ public class MyThreadDemo {
 
 	public static void main(String[] args) {
 		System.out.println(Thread.currentThread());
+		System.out.println(System.currentTimeMillis());
 		Thread t1= new MyThread("worker-1");
 		t1.start();//invokes run() method
+		System.out.println(System.currentTimeMillis());
 		System.out.println("End of main() method");
 
 	}
